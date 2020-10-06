@@ -1,0 +1,120 @@
+body{
+	padding: none;
+	margin: 0;
+	font-family: police1;
+}
+
+@font-face{
+	src: url('police1.ttf');
+	font-family: 'police1';
+}
+
+.border{position: absolute; background-image: url('tile2.png');}
+.corner{position: absolute; background-image: url('tile2.png');}
+
+/*BORDER*/
+.border:nth-child(1){
+	top:0; left: 20vw;
+	width: 60vw;
+	height: 20vh;
+	box-shadow: 0 20px 40px orange;
+	border-bottom: solid 2px silver;
+}
+
+.border:nth-child(2){
+	left:0; top: 20vh;
+	width: 20vw;
+	height: 60vh;
+	box-shadow: 20px 0 40px orange;
+}
+
+.border:nth-child(2) img{
+	width: 10vw;
+	margin-left: 25%;
+}
+
+.border:nth-child(3){
+	bottom:0; left: 20vw;
+	width: 60vw;
+	height: 20vh;
+	box-shadow: 0 -20px 40px orange;
+	border-top: solid 2px silver;
+	color: silver;
+	font-weight: bold;
+	letter-spacing: 3.5px;
+	text-align: justify;
+	word-spacing: 4px;
+}
+
+.border:nth-child(4){
+	right: 0; top: 20vh;
+	width: 20vw;
+	height: 60vh;
+	box-shadow: -20px 0 40px orange;
+}
+
+/*CORNER*/
+.corner:nth-child(1){
+	top: 0; left: 0;
+	width: 20vw;
+	height: 20vh;
+	z-index: 2;
+}
+.corner:nth-child(2){
+	top: 0; right: 0;
+	width: 20vw;
+	height: 20vh;
+	z-index: 2;
+}
+.corner:nth-child(3){
+	bottom: 0; left: 0;
+	width: 20vw;
+	height: 20vh;
+	z-index: 2;
+}
+.corner:nth-child(4){
+	bottom: 0; right: 0;
+	width: 20vw;
+	height: 20vh;
+	z-index: 2;
+}
+
+/*MIDDLE_BOX*/
+.middle_box{
+	position: relative;
+	width: 25vw;
+	height: 15vh;
+	padding: 10vh 0;
+	background-image: url('tile2.png');
+	box-shadow: 0 0 30px orange;
+	border-radius: 20px;
+	border: solid 2px white;
+}
+
+.middle_box img{
+	border-radius: 20px;
+	width: 8vw;
+	position: absolute;
+	left: 50%;	right: 50%;
+	transform: translateX(-50%);
+	border: solid 2px silver;
+}
+
+.middle_box img:hover{
+	filter: grayscale(100%);
+	transition: 1s;
+	width: 9vw;
+	cursor: pointer;
+	margin-top: -5%;
+}
+
+.vertical-align{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	left: 50%;	right: 50%;
+	transform: translateX(-50%);
+	height: 100vh;
+	width: 25vw;
+}

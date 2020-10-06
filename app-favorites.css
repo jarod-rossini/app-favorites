@@ -1,0 +1,131 @@
+body{
+	padding: none;
+	margin: 0;
+	background-image: url('bodyback.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: trebuchet, sans-serif
+}
+
+p{
+	padding: none;
+	margin: 0;
+}
+
+
+/*ALL*/
+.title, .sub1, .sub2{
+	font-weight: bold;
+	display: flex;
+	padding: 0.5% 0;
+	font-size: 0.9em;
+}
+.title a, .sub1 a, .sub2 a{
+	text-decoration: none;
+}
+
+/*TITLE*/
+.title{
+	width: 100%;
+	background-color: grey;
+	color: white;
+}
+.title:hover{
+	background-color: white;
+	color: black;
+}
+.title a{
+	color: white;
+}
+.title:hover a{
+	color: black;
+}
+
+/*SUB1*/
+.sub1{
+	width: 100%;
+	background-color: black;
+	justify-content: center;
+	color: white;
+}
+.sub1:hover{
+	background-color: gray;
+}
+.sub1 a{
+	color: white;
+}
+.sub1:hover a{
+	color: black;
+}
+
+
+/*SUB2*/
+.sub2{
+	width: 100%;
+	background-color: white;
+	text-align: right;
+	justify-content: flex-end;
+	box-shadow: 0 10px 50px orange;
+}
+.sub2:hover{
+	background-color: black;
+}
+.sub2 a{
+	color: black;
+}
+.sub2:hover a{
+	color: white;
+}
+
+
+.network{
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	border-top: solid 2px purple;
+	border-bottom: solid 2px purple;
+	margin-top: 10%;
+	box-shadow: 0 0 50px purple;
+	max-height: 22vh;
+}
+
+.network a img{
+	width: 8vw;
+	padding: 20px;
+	border-radius: 50px;
+}
+
+.network a img:hover{
+	width: 9vw;
+	opacity: 0.8;
+}
+
+.blur{
+	width: 100vw;
+	height: 100vh;
+	z-index: -5;
+	opacity: 0.5;
+	position: absolute;
+	top: 0; left: 0;
+	background-color: black;
+}
+
+.blur:hover{
+	animation: 4s blur forwards;
+}
+
+@keyframes blur{
+	0%,50%{opacity: 0.5}
+	100%{opacity: 0.8}
+}
+
+.baspage{
+	width: 100%;
+	background-color: white;
+	padding: 2vh;
+	box-shadow: 0 -10px 50px blue;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+}
